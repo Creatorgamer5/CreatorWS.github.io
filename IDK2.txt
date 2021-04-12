@@ -1,0 +1,20 @@
+== MCP 9.18 (data: 9.18, client: 1.8.8, server: 1.8.8) ==
+"scalac" is not found on the PATH.  Scala files will not be recompiled
+# found ff, ff patches, srgs, name csvs, doc csvs, param csvs, astyle, astyle config, rg, ss
+== Recompiling client ==
+> Cleaning bin
+> Recompiling
+FATAL ERROR
+Traceback (most recent call last):
+  File "runtime\recompile.py", line 41, in recompile
+    recompile_side(commands, CLIENT)
+  File "E:\Minecraft SourceCode\1.8.8-master\1.8.8\Build 918\runtime\mcp.py", line 136, in recompile_side
+    commands.recompile(side)
+  File "E:\Minecraft SourceCode\1.8.8-master\1.8.8\Build 918\runtime\commands.py", line 1592, in recompile
+    self.runcmd(forkcmd, log_file=pathlog[side])
+  File "E:\Minecraft SourceCode\1.8.8-master\1.8.8\Build 918\runtime\commands.py", line 1629, in runcmd
+    process = subprocess.Popen(forklist, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, bufsize=-1)
+  File "subprocess.pyc", line 679, in __init__
+  File "subprocess.pyc", line 896, in _execute_child
+WindowsError: [Error 2] The system cannot find the file specified
+Press any key to continue . . .
